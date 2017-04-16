@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Your infomation</legend>
+            <input list="list">
+            <datalist id="list">
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+            </datalist>
+            <br>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your full name">
+            <label for="phone">Phone:</label>
+            <div id="phone">
+                <label for="phone">Phone:</label>
+                <input type="number" min=0 max=999 placeholder="xxx"> - 
+                <input type="number" min=0 max=999 placeholder="xxx"> - 
+                <input type="number" min=0 max=9999 placeholder="xxxx">
+            </div>
+            <label for="city">City:</label>
+            <input list="list2">
+            <datalist id="list2">
+                <option value="Toronto">Toronto</option>
+                <option value="London">London</option>
+                <option value="More coming soon" disabled> More coming soon</option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Order information</legend>
+            <input type="checkbox" name="l" id="q"> <label for="q"><img src="../../../img/burger.jpg" alt="Burger" width="100"></label>
+            <input type="checkbox" name="l" id="s"> <label for="s"><img src="../../../img/hotdog.jpg" alt="Hotdog" width="100"></label>
+            <input type="checkbox" name="l" id="j"> <label for="j"><img src="../../../img/pizza.jpg" alt="Pizza" width="100"></label>
+            <input type="checkbox" name="l" id="r"> <label for="r"><img src="../../../img/soup.jpg" alt="Soup" width="100"></label>
+            <br>
+            <label for="people">People (1-6):</label>
+            <input type="range" min=1 max=6>
+            <br>
+            <label for="date">Date:</label>
+            <input type="number" placeholder="mmddyyyy">
+            <br>
+            <label for="time">Time:</label>
+            <input type="number" id="time" placeholder="hh:mm"> 
+            <select name="xxxx" id="time">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select> 
+            <br>
+            <input type="radio" name="w">Master Card
+            <input type="radio" name="w">Visa Card
+            <input type="radio" name="w">Paypal
+        </fieldset>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Please leave your comments here"></textarea>
+        <input type="submit">
+    </form>
+</body>
+</html>
