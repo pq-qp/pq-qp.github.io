@@ -1,0 +1,44 @@
+rgb,rgba,hsl,hsla,cname, cnamea, hex,hexa {
+    width:100px;
+    height:100px;
+    display:  inline-block;
+}
+
+color{
+    color:red;
+}
+bgcolor {
+    background-color: yellow;
+}
+mono {
+    font-family: monospace;
+}
+esp a {
+    color:gray
+}
+rgb {
+    background-color: rgb(255,0,0);
+}
+rgba {
+    background-color: rgba(255,0,0,0.5);
+}
+hsl {
+    background-color: hsl(0,100%,50%);
+}
+hsla {
+    background-color: hsla(0,100%,50%,0.5);
+}
+cname {
+    background-color: red;
+}
+cnamea {
+    background-color: red;
+    opacity: 0.5;
+}
+hex {
+    background-color: #ff0000;
+}
+hexa {
+    background-color: #ff0000;
+    opacity: 0.5;
+}
