@@ -3,7 +3,6 @@ rgb,rgba,hsl,hsla,cname, cnamea, hex,hexa {
     height:100px;
     display:  inline-block;
 }
-
 color{
     color:red;
 }
@@ -41,4 +40,70 @@ hex {
 hexa {
     background-color: #ff0000;
     opacity: 0.5;
+}
+bold {
+    font-weight: bold;
+}
+italic {
+    font-style: italic;
+}
+underline {
+    text-decoration: underline;
+}
+cursive {
+    font-family: cursive;
+   /* may not work for everyone*/
+}
+fantasy {
+    font-family: fantasy;
+    /*may not work for everyone*/
+}
+monospace {
+    font-family: monospace;
+/*    same as mono*/
+}
+sans {
+    font-family: sans-serif;
+}
+serif {
+    font-family: serif
+}
+expbig {
+    font-size: 2em;
+}
+expsmall {
+    font-size: 0.5em
+}
+expbold {
+    /*    requires copying into html code*/
+    font-family:sans-serif;
+    font-weight: bold;
+}
+ls {
+    /*    requires copying into html code*/
+    letter-spacing: 6px;
+}
+ws {
+    /*    requires copying into html code*/
+    word-spacing: 6px;
+}
+capital {
+    /*    requires copying into html code*/
+    text-transform: capitalize;
+}
+shadow {
+    /*    requires copying into html code*/
+    text-shadow: 4px 0px 4px gray;
+}
+ub {
+    /*    requires copying into html code*/
+    width: 150px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 25px;
+    display: inline-block;
+    
 }
