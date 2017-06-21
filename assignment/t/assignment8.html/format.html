@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Format</title>
+    <style>
+        select {
+            -webkit-appearance: menulist-button;
+            -moz-appearance: menulist-button;
+            -o-appearance: menulist-button;
+            -ms-appearance: menulist-button;
+            appearance: menulist-button;
+            width: 100px;
+            height: 100px;
+            background-color: lawngreen;
+        }
+        option {
+            background-color: blueviolet;
+            color: blue;
+        }
+        option[disabled] {
+            color:yellow;
+        }
+        input[type=radio] {
+            vertical-align: middle;
+            width: 50px;
+            height: 100px;
+        }
+        label[for=a] {
+            width: 50px;
+            height: 100px;
+        }
+    </style>
+    <prot t="protect.cyy"></prot>
+</head>
+<body>
+    <form action="#">
+        <select name="test" id="">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+        <select name="planets" id="">
+            <option value="---" disabled selected>---</option>
+            <option value="Mercury">Mercury</option>
+            <option value="Venus">Venus</option>
+            <option value="Earth">Earth</option>
+            <option value="Mars">Mars</option>
+            <option value="Ceres" disabled>Ceres</option>
+            <option value="Jupiter">Jupiter</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Uranus">Uranus</option>
+            <option value="Neptune">Neptune</option>
+            <option value="Pluto">Pluto</option>
+            <option value="Eris" disabled>Eris</option>
+            <option value="Makemake" disabled>Makemake</option>
+            <option value="Haumea" disabled>Haumea</option>
+        </select>
+        <input id="a" type="radio"> <label for="a">Test</label>
+    </form>
+</body>
+</html>
