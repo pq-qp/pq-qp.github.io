@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 200px;
+            height: 300px;
+            border: solid red 4px;
+            background-color: turquoise;
+        }
+        
+        .a {
+            width:150px;
+            height:150px;
+            color:green;
+            position: absolute;
+        }
+        #one {
+            background-color: brown;
+            z-index: 0;
+        }
+        #two {
+            background-color: cornflowerblue;
+            left:50px;
+            top:50px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="one" class="a">11111111111</div>
+        <div id="two" class="a">22222222222</div>
+    </div>
+</body>
+</html>

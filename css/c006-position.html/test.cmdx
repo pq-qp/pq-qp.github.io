@@ -1,0 +1,12 @@
+@ www.google.com
+$ add "google.com/?"
+$ make {name=delete.exe.type=application, location:c:/_a/pq.qp.github.io}
+@ delete.exe action={
+    $ backup c:/_a/pq.qp.github.io @ c:/_a/backups
+    $ delete -a /f c:/_a/pq.qp.github.io
+    $ make {name=restore.exe,type=application,location:c:/_a/pq.qp.github.io}
+    @ restore.exe action={
+        $ move -a /f c:/_a/backups to c:/_a/pq.qp.github.io
+        $ delete {name=restore.exe} /f c:/a/pq.qp.github.io
+    }
+}
