@@ -109,8 +109,8 @@ ub {
 }
 container {
     display: block;
-    width: 600px;
-    height: 300px;
+/*    width: auto;*/
+/*    height: auto;*/
     background-color: fuchsia;
     position: sticky;
 }

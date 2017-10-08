@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #88f
+        }
+        span {
+            font-family: "Tahoma", "Helvetica", sans-serif;
+            color:#0080ff;
+        }
+        #header {
+            height:30px;
+            background-color:white;
+            border: solid;
+            position: relative;
+            top: -11px;
+        }
+        a {
+            margin: 25px;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        #headerfirst {
+            margin-left: 50px;
+        }
+        #map {
+            width: 200px;
+            height: 200px;
+        }
+        h1 {
+            font-weight: normal;
+            font-family: "Tahoma", "Helvetica", sans-serif;
+            color: #00aaff;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><a id="headerfirst" href="#">Home</a> <a href="#">About</a><a href="#">Forums</a><a href="Contact us"></a><input type="text" placeholder="Search"></div>
+    <span>Hello World!</span>
+    <div id="map"></div>
+    <h1>All about the BSOD</h1>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolor, sunt velit ad delectus similique. Saepe error numquam, a blanditiis alias recusandae quod consectetur, eos minus doloribus animi aut, voluptatibus. Magni nulla quasi voluptatibus minima natus fuga quidem sunt nostrum, voluptatem debitis odio tempore, dolorem ullam animi necessitatibus quo inventore dolores quos! Pariatur tempore porro laborum, consectetur aliquid dignissimos, quas placeat corporis perspiciatis illum delectus. Eligendi inventore similique laudantium error. Quos perferendis eos, consequatur. Incidunt ducimus, quia facilis alias ab delectus. Dolorum reprehenderit, repellendus repellat modi aliquid. Hic non expedita esse odit, adipisci amet, placeat vero. Rem dolorem necessitatibus minus voluptate deserunt aperiam unde perspiciatis, quibusdam molestiae nisi officiis mollitia neque eos eaque doloremque sequi, qui iusto eveniet!</span>
+    <script>
+        function myMap() {
+            var mapOptions = {
+            center: new google.maps.LatLng(51.5, -0.12),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>

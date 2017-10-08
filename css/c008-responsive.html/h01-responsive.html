@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        button {
+            /*border:none;
+            background-color: white;
+            color: white;*/
+            width: 300px;
+            height: 40px;
+            border: none;
+            background-color: green;
+            color: white;
+            font-size: 2em;
+            display: block;
+            outline: none;
+            margin: 10px auto;
+        }
+        
+        @media all and (min-width:812px) {
+            button {
+                background-color: yellow;
+            }
+            #comments {
+                input/value:"Stable" 
+            }
+        }
+        @media screen and (min-width:984px) {
+            button {
+                background-color: red;
+            }
+            #comments {
+                input/value:"Slightly unstable"
+            }
+        }
+        @media print and (min-width:985px) {
+            button {
+                background-color: red;
+            }
+            #comments {
+                input/value:"Unstable"
+            }
+        }
+        @media screen and (min-width: 1333px) {
+            button {
+                background-color: black;
+            }
+            #comments {
+                input/value:"Toppled. Game Over."
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- MOBILE FIRST! -->
+    
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <label for="coments">Comments: </label><input id="comments" type="text" disabled>
+</body>
+</html>
