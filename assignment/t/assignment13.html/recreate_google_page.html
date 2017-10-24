@@ -1,0 +1,125 @@
+<!-- Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogochageyualidgarrimolaggaelopawwaedehaqwellanauskaosiaodhdansanfudishhfislaaekafjislatylianfjallafoldaeneyeddehehakkaleieallanekunekuffakaurenneneadakielleneaetteryx -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <style>
+        html {
+            height: 100%;
+            
+        }
+        body {
+            height: 100%;
+
+        }
+        #all {
+            text-align: center;
+            padding-top: 200px;
+        }
+
+        #google {
+            color: #0080ff;
+            position: relative;
+            left: 120px;
+            top: -30px;
+        }
+        
+        #googl {
+            color: #0080ff;
+        }
+
+        #search {
+            width: 550px;
+            height: 55px;
+            z-index: 0;
+            /*            display: none;*/
+/*            newer elements below*/
+            border: none;
+            outline: none;
+            font-size: 1.4em;
+            font-family: "Arial", sans-serif;
+        }
+
+        #search-container {
+            margin: auto;
+            border: solid #333333 0px;
+            width:600px;
+            box-shadow: 3px 3px 10px 0px gray;
+        }
+        ::-webkit-input-placeholder {
+            color: white;
+        }
+
+        div:lang(voicesearch) {
+            display: inline-block;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC);
+            background-size: 24px 24px;
+            height: 23px;
+            width: 23px;
+            z-index: 1;
+            position: relative;
+            top: 6px;
+        }
+
+        #google-container {
+            margin: auto;
+        }
+        .buttons {
+            outline: none;
+            border: none;
+            margin: 5px;
+            padding: 10px 20px;
+            font-weight: bold;
+            color: #757575;
+            background-color: #f2f2f2;
+        }
+        .undertext {
+            font-size: 13.5px;
+        }
+        footer {
+            border: solid 1px #7c7c7c;
+            position: fixed;
+            width: 100%;
+            height: 40px;
+            bottom: -3px;
+            left: -1px;
+            background-color: #dddddd;
+        }
+    </style>
+    <link rel="icon" href="https://www.google.ca/images/branding/product/ico/googleg_lodp.ico">
+</head>
+
+<body>
+    <div id="all">
+        <div id="google-container">
+            <img src="../../../img/google.png" alt="Google" style="display:inline;">
+            <br>
+            <span id="google" hidden="hidden">Canada</span>
+            
+        </div>
+        <div style="height: 20px;"></div>
+        <div id="search-container">
+            <input id="search" placeholder="Search Google" type="text">
+            <abbr title="Search by voice"><div lang="voicesearch"></div></abbr>
+        </div>
+        <div style="height: 60px;"></div>
+        <div id="buttons-container"><button class="buttons" onclick="search();">Google Search</button><button class="buttons" onclick="document.body.innerHTML = ''">I'm Feeling Lucky</button></div>
+        <p class="undertext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p class="undertext">Google offered in: <a href="../../../first.html">Español</a></p>
+        <footer></footer>
+        <script>
+            function search() {
+                for (var i = 1; i < 4; i++) {
+                    console.log(i);
+                }
+                console.log("The operation is successful.");
+                document.body.innerHTML = "<span id='googl'>Your computer will be hacked when you close this tab</span>";
+            }
+        </script>
+    </div>
+
+
+
+</body>
+</html>

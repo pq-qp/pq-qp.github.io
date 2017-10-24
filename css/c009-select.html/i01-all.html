@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*tag, class, id, tagid, inlinestyle*/
+        .first {
+            color: darkblue;
+        }
+        body {
+            font-size: 4em;
+        }
+        li {
+            color: darkred !important; /**/
+        }
+        li:nth-child(2) {
+            text-shadow: 2px 2px 2px gray;
+        }
+        li:lang(answers) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="first" attributes>1</li>
+        <li class="second" attributes>2</li>
+        <li class="third" lang="answers" attributes>3</li>
+    </ul>
+    
+</body>
+</html>
