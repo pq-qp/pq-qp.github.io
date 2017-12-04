@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .line {
+            stroke: rgb(255, 255, 0);
+            stroke-width: 5px;
+            stroke-linecap: round;
+        }
+        
+        .rect {
+            fill: rgb(10, 147, 255);
+            stroke-width: 5px;
+            stroke: rgb(0, 0, 0);
+            height:210px;
+            width:210px;
+            transition: 2s;
+        }
+        .rect:hover{
+            fill: rgb(255, 12, 12)
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="demo.svg" alt="">
+    equals
+    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+    
+	
+    <rect class="rect" x="10" y="10" height="210" width="210"></rect>
+	
+    <line class="line" x1="10" y1="10" x2="220" y2="220"></line>
+</svg>
+
+
+</body>
+</html>

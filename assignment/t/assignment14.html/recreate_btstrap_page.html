@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>All of CSS so far...</title>
+	<style>
+		* {
+			padding: 0;
+			/*            border: 0;*/
+			margin: 0;
+		}
+
+		#navbar *,
+		footer *, .person {
+			display: inline-block;
+		}
+
+		#navbar nav {
+			position: absolute;
+			right: 10px;
+		}
+
+		ul, #copyright {
+			font-variant: small-caps;
+		}
+
+		#navbar,
+		footer {
+			padding: 10px 40px;
+			border: solid;
+		}
+
+		a.navlinks:link, a.navlinks:visited {
+			text-decoration: none;
+			color: green;
+		}
+
+		a.navlinks:hover {
+			color: #c0c000;
+		}
+		a.navlinks:active {
+			color: #8000ff;
+		}
+/*
+		a.navlinks:visited {
+			color: lime;
+		}
+*/
+
+		#begin {
+			box-sizing: border-box;
+			padding-top: 250px;
+			padding-left: 20px;
+			background-image: url(../../../img/worldmap.jpg);
+			height: 600px;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.bcontent {
+			color: #3e3e3e;
+			font-size: 30px;
+		}
+
+		input:lang(under) {
+			position: relative;
+			left: 20px;
+			width: 150px;
+			font-size: 18px;
+		}
+
+		#maincont {
+			margin: 30px;
+			text-align: center;
+		}
+
+		.row {}
+
+		.imgs-l,
+		.imgs-r {
+			background-image: url(https://static.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg);
+			width: auto;
+			height: 300px;
+			background-size: cover;
+		}
+
+		.sidetext-l,
+		.sidetext-r {
+			text-align: center;
+		}
+
+		#omicron {
+			text-align: center;
+		}
+
+		.person {
+			text-align: center;
+			margin: 20px;
+			width: 325px;
+		}
+
+		.portrait {
+			width: 300px;
+			border: solid;
+			border-radius: 666px;
+		}
+
+		ooo {
+			font-family: cursive;
+		}
+
+		footer {
+			display: block !important;
+			text-align: center;
+		}
+		#copyright {
+			color: #8000ff;
+		}
+
+		@media all and (min-width: 500px) {
+			#begin {
+				padding-left: 50px;
+			}
+			input:lang(under) {
+				left: 200px;
+				width: 175px;
+			}
+		}
+
+		@media all and (min-width: 750px) {
+			#begin {
+				padding-left: 150px;
+			}
+			input:lang(under) {
+				left: 225px;
+				width: 200px;
+			}
+			.imgs-l,
+			.imgs-r {
+				width: 400px;
+			}
+			.imgs-l,
+			sidetext-l {
+				float: left;
+				clear: none;
+			}
+			.imgs-r,
+			sidetext-r {
+				float: right;
+				clear: none;
+			}
+		}
+
+		@media all and (min-width: 1000px) {
+			#begin {
+				padding-left: 350px;
+			}
+			input:lang(under) {
+				left: 300px;
+				width: 225px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="navbar">
+		<h4>???????</h4>
+		<nav>
+
+			<ul>
+				<li><a class="navlinks" href="#">Home</a></li>
+				<li><a class="navlinks" href="#">About</a></li>
+				<li><a href="#" class="navlinks">Services</a></li>
+				<li><a href="#" class="navlinks">Contact</a></li>
+			</ul>
+
+		</nav>
+	</div>
+	<div id="begin"><span class="bcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span><br><input type="text" class="bcontent" lang="under"></div>
+	<div id="maincont">
+		<h2>
+			<j class="fa fa-rocket" style="font-size: 50px;" aria-hidden="true"></j>
+		</h2>
+		<h3>Space exploration</h3>
+		<p>Eveniet inventore voluptatum suscipit, cum deleniti porro sapiente totam, dolore laborum illo laboriosam fuga praesentium autem ipsa ab doloremque debitis facilis nesciunt? Sint rerum quos quisquam fuga quam atque odio a illo similique enim suscipit.</p>
+	</div>
+	<div id="maincont">
+		<h2>
+			<j class="fa fa-recycle" style="font-size: 50px;" aria-hidden="true"></j>
+		</h2>
+		<h3>Recycling</h3>
+		<p>Hic odio, explicabo debitis ex vel, voluptates aliquid? Mollitia, repellendus! Doloribus, atque reprehenderit veniam eaque, quos voluptates eum vel error eos neque.Perspiciatis deserunt suscipit, est excepturi nam ipsa atque sit, velit eius doloribus, iure alias modi vel aspernatur accusamus.</p>
+	</div>
+	<div id="maincont">
+		<h2>
+			<j class="fa fa-heart" style="font-size: 50px;" aria-hidden="true"></j>
+		</h2>
+		<h3>Health care</h3>
+		<p>Quod eveniet, impedit unde similique odio, rerum et aut libero, natus accusantium, saepe cum molestias pariatur omnis? Dolorum velit ut explicabo voluptate officiis nostrum, unde culpa voluptates, aut. Unde quaerat necessitatibus optio.</p>
+	</div>
+	<br>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<div class="row">
+		<div class="imgs-l"></div>
+		<div class="sidetext-r">
+			<h2>Repellat facilis quia fugit nihil</h2>
+			<p>Placeat architecto id, repudiandae eum consequuntur eveniet quam unde, distinctio ipsa nobis, nemo! Ea sint fugit, praesentium earum dignissimos minima sapiente error, sapiente nemo modi aliquam non! Nostrum, totam expedita facere, laborum ex saepe minus quaerat hic voluptatem.</p>
+		</div>
+	</div>
+	<br>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<div class="row">
+		<div class="imgs-r"></div>
+		<div class="sidetext-l">
+			<h2>Obcaecati iste placeat asperiores</h2>
+			<p>Doloribus laborum enim ex quas qui cupiditate facere consectetur, dicta doloremque facilis. Neque, impedit repudiandae, minima repellendus quia tenetur qui perspiciatis quo. Voluptatibus aliquam, voluptatum aliquid?</p>
+		</div>
+	</div>
+	<br>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<div class="row">
+		<div class="imgs-l"></div>
+		<div class="sidetext-r">
+			<h2>Commodi eos illum at</h2>
+			<p>Nostrum temporibus, dicta unde deleniti corporis adipisci molestias id expedita ad cum laborum, dolorem animi qui, libero aliquam quos maiores quaerat veritatis. Vel exercitationem nemo eligendi pariatur maiores incidunt atque fuga quae ut sapiente illo odit beatae ipsa, obcaecati fugit ab dolore rerum est.</p>
+		</div>
+	</div>
+	<br>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="omicron">
+		<div style="text-align: center">
+			<h2>What people are saying:</h2>
+		</div>
+		<div class="person">
+			<img src="../../../img/person1.png" alt="" class="portrait" width="300" height="300">
+			<h2>Tammy M. Chapman</h2>
+			<p>"Tempora cum, repellendus officiis est commodi alias architecto laboriosam at, voluptates, molestias repellat ut quod perferendis id veritatis tenetur!"</p>
+		</div>
+		<div class="person">
+			<img src="../../../img/person2.png" alt="" class="portrait" width="300" height="300">
+			<h2>Zhi Fan</h2>
+			<p>"Suscipit blanditiis iste, neque facere accusamus laboriosam doloribus corrupti, iusto, voluptatem exercitationem temporibus atque debitis ipsum magni."</p>
+		</div>
+		<div class="person">
+			<img src="../../../img/person3.png" alt="" class="portrait" width="300" height="300">
+			<h2>Louis D. Morrow</h2>
+			<p>"Accusantium distinctio corporis laborum in placeat molestias voluptatibus similique minus recusandae earum ullam nemo dolorem consequuntur repellendus, obcaecati. commodi eum nulla rerum."</p>
+		</div>
+	</div>
+	<div id="begin"><span class="bcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span><br><input type="text" lang="under" class="bcontent"></div>
+	<footer>
+		<ul>
+			<li><a href="#" class="navlinks">About</a></li>
+			<li><a href="#" class="navlinks">Terms of use</a></li>
+			<li><a href="#" class="navlinks">Priva<s>cy</s><ooo>te</ooo> Polic<s>y</s><ooo>e</ooo></a></li>
+		</ul>
+		<br>
+		<span id="copyright">&copy; 2018 Jake Zhao. All rights reserved.</span>
+	</footer>
+
+</body>
+</html>
