@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#container {
+			background-color: #808080;
+			width: 200px;
+			height:400px;
+		}
+		#red {
+			background-color: red;
+		}
+		#green {
+			background-color: #404040;
+		}
+		#container:hover #red {
+			background-color: #404040;
+		}
+		#container:hover #green {
+			background-color: green;
+		}
+		#red, #green {
+			width: 180px;
+			height: 180px;
+			border-radius: 99999px;
+			margin: 10px auto;
+			transition-property: background-color;
+			transition-timing-function: linear;
+			transition-duration: 1s;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div style="height: 5px;"></div>
+		<div id="red"></div>
+		<div id="green"></div>
+	</div>
+</body>
+</html>

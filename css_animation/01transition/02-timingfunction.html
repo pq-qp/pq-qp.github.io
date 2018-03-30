@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#container {
+			position: relative;
+			background-color: #c0c0c0;
+			height: 300px;
+			width: 300px;
+			border: solid;
+			transition-property: left, right;
+		}
+		#test {
+			background-color: #804000;
+			width: 10px;
+			height: 300px;
+			position: absolute;
+			right: 290px;
+			transition-property: left right;
+			transition-duration: 2s;
+			transition-timing-function:cubic-bezier(0,0,0,1);
+		} 
+		#container:hover #test{
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="test">
+			<div></div>
+		</div>
+	</div>
+</body>
+</html>

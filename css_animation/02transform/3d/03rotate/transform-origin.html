@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.container {
+			perspective: 400px;
+		}
+		.rotate {
+			width: 100px;
+			height: 200px;
+			background-color: darkcyan;
+			margin: auto;
+			transition: 3s;
+		}
+		body:hover .rotate {
+			transform: rotateX(10turn);
+			transform-origin: bottom;
+/*			transform-origin: 20px 20px;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="rotate"></div>
+	</div>
+</body>
+</html>

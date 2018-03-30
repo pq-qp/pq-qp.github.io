@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation</title>
+	<style>
+		#sky {
+			height: 100vh;
+			background-color: #4080ff;
+		}
+		#ground {
+			position: relative;
+			top: 33.33333vh;
+			height: 33.33333vh;
+			background-color: #aaff00;
+/*			z-index: 1;*/
+		}
+		#sun {
+			border-radius: 999999px;
+			width: 100px;
+			height: 100px;
+			background-color: #ffff00;
+			position: absolute;
+			bottom: 100px;
+			transition-property: transform;
+			transition-duration: 5s;
+			transition-timing-function: linear;
+			
+		}
+		body:hover #sun {
+			transform: translate(66.66666vw, -66.66666vh);
+		}
+		#mountains {
+			margin: auto;
+			position: relative;
+			top: 33.33333vh;
+			width: 0;
+			height: 0;
+			border: solid transparent 100px;
+			border-bottom: solid #c0c0c0 100px;
+		}
+		.overlay {
+			position: relative;
+			bottom: 100vh;
+			height: 100vh;
+			background-color: #000000;
+			opacity: 100%;
+			transition-property: opacity;
+			transition-duration: 5s;
+			transition-timing-function: linear;
+		}
+		body:hover .overlay{
+			opacity: 0;
+			z-index: 0;
+		}
+	</style>
+</head>
+<body>
+	<noscript>If you suspect you have a bad GPU, press the backspace key immediately.</noscript>
+	<div id="sky">
+		<div id="sun"></div>
+		<div id="mountains">
+		</div>
+		<div id="ground"></div>
+	</div>
+	
+	<div class="overlay"></div>
+</body>
+</html>
