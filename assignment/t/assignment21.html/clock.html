@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clock</title>
+	<style>
+		body {
+			background-color: #dd8033;
+		}
+		#container {
+			margin: auto;
+		}
+		#circle {
+			background-color: white;
+			margin: 100px auto;
+			width: 400px;
+			height: 400px;
+			border: solid black 5px;
+			border-radius: 50%;
+		}
+		#c {
+			width: 20px;
+			height: 20px;
+			background-color: black;
+			border-radius: 50%;
+			position: relative;
+			left: 190px;
+			top: 190px;
+			z-index: 99999;
+		}
+		.hand {
+			display: block;
+			/*Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consequatur vitae quisquam doloribus, suscipit illo soluta porro! Molestiae labore id perspiciatis vitae, sint deleniti consectetur officia tempora voluptatum quam voluptates!*/
+		}
+		#h {
+			position: relative;
+			left: 195px;
+			top: 27px;
+			width: 10px;
+			height: 150px;
+			background-color: black;
+			animation: anim 86400s infinite steps(24, end) normal;
+			transform-origin: bottom;
+			
+		}
+		#m {
+			position: relative;
+			left: 195px;
+			bottom: 135px;
+			width: 10px;
+			height: 165px;
+			background-color: black;
+			animation: anim 3600s infinite steps(60, end) normal;
+			transform-origin: bottom;
+		}
+		#s {
+			position: relative;
+			left: 197px;
+			bottom: 320px;
+			width: 5px;
+			height: 180px;
+			background-color: red;
+			z-index: 1;
+			animation: anim 60s infinite steps(60, end) normal;
+			transform-origin: bottom;
+		}
+		@keyframes anim {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="circle">
+			<div id="c"></div>
+			<div class="hand" id="h"></div>
+			<div class="hand" id="m"></div>
+			<div class="hand" id="s"></div>
+		</div>
+	</div>
+</body>
+</html>

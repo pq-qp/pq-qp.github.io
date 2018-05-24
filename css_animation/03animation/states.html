@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#container {
+			position: relative;
+			width: 400px;
+			height: 400px;
+			border: solid black;
+			background-color: gray;
+			color: aqua;
+			font-family: sans-serif;
+			font-size: 420px;
+/*			font-weight: normal;*/
+			
+		}
+		span {
+			position: absolute;
+			top: -80px;
+		}
+		#obj {
+			top: 0;
+			left: 0;
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background-color: #00f;
+			animation: anim 2s infinite linear alternate;
+			/*
+				Order:
+				-name, -duration, -iteration-count, -timing-function, -direction
+			*/
+		}
+		
+		@keyframes anim {
+			from {
+				left: 0;
+			}
+			25%, 75% {
+				left: 100px;
+				top: 100px;
+			}
+			50% {
+				left: 100px;
+				top: 200px;
+			}
+			to {
+				top: 0;
+				left: 200px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container"><span>Ｙ</span><div id="obj"></div></div>
+</body>
+</html>

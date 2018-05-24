@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>	
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			border-radius: 50%;
+			animation: move 1s;
+			animation-fill-mode:both;
+			animation-delay: 1s;
+		}
+		
+		@keyframes move {
+			from {
+				transform: translate(100px);
+			}
+			to {
+				transform: translate(300px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Albums</title>
+	<style>
+		div {
+			position: absolute;
+			/*			perspective: 400px;*/
+		}
+
+		#container {
+/*			perspective: 400px;*/
+			z-index: -100;
+			top: 15vh;
+			left: 25vw; 
+			/*			transform: rotateY(90deg);*/
+		}
+/*
+		#container * {
+			transform: rotateY(45deg);
+		}
+*/
+
+		#cover,
+		#bottom {
+			width: 303px;
+			height: 400px;
+			transform: perspective(100px);
+			background-color: #8000ff;
+			text-align: center;
+/*			transform-style: preserve-3d;*/
+		}
+
+		img {
+			width: 303px;
+			height: 400px;
+		}
+
+		#middle {
+			width: 20px;
+			height: 88%;
+/*			border: solid;*/
+			transform:perspective(100px) rotateY(45deg);
+			background-color: #fff;
+			left: 99%;
+			top: 20px;
+			z-index: 1;
+			box-shadow: 0 0 20px gray inset;
+		}
+
+		#cover {
+			transform: perspective(100px) rotateY(-5deg);
+			/*			z-index: -1;*/
+		}
+
+		#bottom {
+			box-shadow: 10px 10px 10px gray;
+			transform: perspective(100px) rotateY(-5deg) translateZ(-20px);
+			left: 55px;
+			height: 430px;
+			top: -15px;
+		}
+
+		/*#end {
+			width: 294px;
+			height: 15px;
+			background-color: #fff;
+			top: 380px;
+			transform: rotateX(90deg);
+		}*/
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="bottom"></div>
+		<div id="cover">
+			<div id="middle"></div>
+			<img src="../../../img/pizza.jpg" alt="">
+		</div>
+<!--		<div id="end"></div>-->
+		
+
+	</div>
+
+</body>
+</html>

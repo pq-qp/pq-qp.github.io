@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carousel</title>
+	<style>
+		#container {
+			perspective: 1000px
+		}
+		.panel {
+			position: absolute;
+			left: 0vw;
+			border: solid 1px;
+			width: 1200px;
+			height: 200px;
+			background-color: rgba(192,192, 192, 0.5);
+		}
+		#panel1 {
+/*			transform: rotateY(0deg);*/
+			animation: panel1 2s infinite linear;
+		}
+		#panel2 {
+			animation: panel2 2s infinite linear;
+		}
+		#panel3 {
+			animation: panel3 2s infinite linear;
+		}
+		#panel4 {
+			animation: panel4 2s infinite linear;
+		}
+		
+		@keyframes panel1 {
+			from {
+				transform: rotateY(0deg);
+			}
+			to {
+				transform: rotateY(360deg);
+			}
+		}
+		@keyframes panel2 {
+			from {
+				transform: rotateY(90deg);
+			}
+			to {
+				transform: rotateY(450deg);
+			}
+		}
+		@keyframes panel3 {
+			from {
+				transform: rotateY(180deg);
+			}
+			to {
+				transform: rotateY(540deg);
+			}
+		}
+		@keyframes panel4 {
+			from {
+				transform: rotateY(270deg);
+			}
+			to {
+				transform: rotateY(630deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="panel1" class="panel"><img src="../../../img/burger.jpg" alt="" width="300" height="200"></div>
+		<div id="panel2" class="panel"><img src="../../../img/hotdog.jpg" alt="" width="300" height="200"></div>
+		<div id="panel3" class="panel"><img src="../../../img/pizza.jpg" alt="" width="300" height="200"></div>
+		<div id="panel4" class="panel"><img src="../../../img/soup.jpg" alt="" width="300" height="200"></div>
+	</div>
+</body>
+</html>

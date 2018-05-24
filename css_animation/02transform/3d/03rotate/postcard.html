@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#surface {
+			perspective: 800px;
+		}
+		.side {
+			width: 400px;
+			height: 300px;
+			font-size: 50px;
+			position: absolute;
+		}
+		#card {
+/*			border: solid;*/
+			transform-style: preserve-3d;
+			width: 400px;
+			height: 300px;
+			transition: 1s;
+		}
+		.front {
+			background-color: rgba(255,0,0,0.3);
+			backface-visibility: hidden;
+		}
+		.back {
+			background-color: rgba(0,0,255,0.3);
+			transform: rotateY(180deg);
+			backface-visibility: hidden;
+			transition: 1s;
+		}
+		#card:hover {
+			transform: rotateY(180deg);
+		}
+	</style>
+</head>
+<body>
+	<div id="surface">
+		<div id="card">
+			<div class="side front">Front</div>
+			<div class="side back">Back</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Animation</title>
+	<style>
+        body {
+            background-color: black;
+        }
+		div {
+			width: 10px;
+			height: 300px;
+            background-color: white;
+			
+/*			if animation 'move' doesn't define, engine pick up the animation 'color' without error */
+            animation: move 4s linear forwards, color 4s step-end forwards;
+            
+		}
+		
+		@keyframes move {
+			from {
+				transform: translateX(100px);
+			}
+            
+			to {
+				transform:translateX(300px);
+			}
+		}
+		@keyframes color {
+            from {
+                background-color: white;
+            }
+			50% {
+                background-color: red;
+			}
+			to {
+				background-color: white;
+			}
+            
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<div></div>
+	
+</body>
+</html>
+
+

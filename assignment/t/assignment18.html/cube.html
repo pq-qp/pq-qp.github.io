@@ -4,21 +4,75 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
+		body {
+			perspective: 3000px;
+			padding-top: 100px;
+		}
 		.side {
-			width: 100px;
-			height: 100px;
-			background-color: red;
+			
+			width: 200px;
+			height: 200px;
+			top: 100px;
+			left: 100px;
+/*			background-color: red;*/
+			font-size: 30px;
+			text-align: center;
+			position: absolute;
+			
+		}
+		#surface {
+			margin-left: 20vw;
+			border: solid;
+			background-color: rgba(255,0,0,0.2);
+			perspective: 400px;
+			transform: rotateY(45deg) translateZ(-200px);
+			width: 500px;
+			height: 500px;
+			transform-style: preserve-3d;
+			transition: 1s;
+		}
+		#surface:hover {
+			transform: rotateY(-45deg);
+		}
+		#side1, #side3 {
+			background-color: rgba(255,0,0,0.5);
+		}
+		#side2, #side4 {
+			background-color: rgba(0,255,0,0.5);
+		}
+		#side5, #side6 {
+			background-color: rgba(0,0,255,0.5);
+		}
+		
+		#side2 {
+			transform: rotateY(90deg);
+			transform-origin: right;
+		}
+		#side3 {
+			transform: translateZ(200px);
+		}
+		#side4 {
+			transform: rotateY(-90deg);
+			transform-origin: left;
+		}
+		#side5 {
+			transform: rotateX(-90deg);
+			transform-origin: bottom;
+		}
+		#side6 {
+			transform: rotateX(90deg);
+			transform-origin: top;
 		}
 	</style>
 </head>
 <body>
 	<div id="surface">
-		<div id="side1" class="side"></div>
-		<div id="side2" class="side"></div>
-		<div id="side3" class="side"></div>
-		<div id="side4" class="side"></div>
-		<div id="side5" class="side"></div>
-		<div id="side6" class="side"></div>
+		<div id="side1" class="side">1</div>
+		<div id="side2" class="side">2</div>
+		<div id="side3" class="side">3</div>
+		<div id="side4" class="side">4</div>
+		<div id="side5" class="side">5</div>
+		<div id="side6" class="side">6</div>
 	</div>
 </body>
 </html>

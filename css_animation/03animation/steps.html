@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Steps</title>
+	<style>
+		div {
+			width: 20px;
+			height: 200px;
+			background-color: blue;
+			animation: move 1s;
+			animation-timing-function: steps(2, start);
+			animation-fill-mode: forwards;
+		}
+		
+		@keyframes move {
+			from {
+				transform: translateX(0px);
+			}
+			to {
+				transform: translate(200px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
